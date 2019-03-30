@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ColorSelection</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+	<h1>Любимый цвет</h1>
+	<h2>В каждом блоке Вам нужно выбрать одно, наиболее подходящее для Вас</h2>
+	<div class="main_cont">
+		<h3>Какое изображение использовать:</h3>
+		<input type="radio" name="answerFirst" class="noImg" id="noImg"><label for="noImg" class="no_img">не использовать изображение</label>
+		<input type="radio" name="answerFirst" class="qwsIMG" id="landscape"><label for="landscape" class="landscape"><img class="landcat" src="img/landscape.jpg">использовать этот пезаж</label>
+		<input type="radio" name="answerFirst" class="qwsIMG" id="cat"><label for="cat" class="cat"><img class="landcat" src="img/cat.jpg">использовать этого милого котика</label>
+	</div>
+	<div class="main_cont hid">
+		<h3>Какое количество цветов добавим:</h3>
+		<div class="without_img inner_cont hid">
+			<input type="radio" name="answerSecond" id="count2"><label for="count2">2</label>
+			<input type="radio" name="answerSecond" id="count3"><label for="count3">3</label>
+			<input type="radio" name="answerSecond" id="count4"><label for="count4">4</label>
+		</div>
+		<div class="with_img inner_cont hid">
+			<input type="radio" name="answerSecond" id="count-1"><label for="count-1">1</label>
+			<input type="radio" name="answerSecond" id="count-2"><label for="count-2">2</label>
+			<input type="radio" name="answerSecond" id="count-3"><label for="count-3">3</label>
+		</div>
+	</div>
+	<div class="main_cont hid">
+		<h3>Выберите цвет для добавления:</h3>
+		<div class="seven_colors inner_cont">
+			<label for="red" class="color red" title="Red"><input type="radio" name="answerThird" id="red"></label>
+			<input type="radio" name="answerThird" id="orange"><label for="orange" class="color orange" title="Orange"></label>
+			<input type="radio" name="answerThird" id="yellow"><label for="yellow" class="color yellow" title="Yellow"></label>
+			<input type="radio" name="answerThird" id="green"><label for="green" class="color green" title="Green"></label>
+			<input type="radio" name="answerThird" id="blue"><label for="blue" class="color blue" title="Blue"></label>
+			<input type="radio" name="answerThird" id="indigo"><label for="indigo" class="color indigo" title="Indigo"></label>
+			<input type="radio" name="answerThird" id="violet"><label for="violet" class="color violet" title="Violet"></label>
+		</div>
+	</div>
+	<div class="main_cont hid">
+			<h3>Оттенок какого цвета добавим:</h3>
+			<div class="shade_selected">
+				<input type="radio" name="odin" id="black"/>
+				<label for="black"></label>
+				<input type="radio" name="odin" id="white"/>
+				<label for="white"></label>
+				<div class="shades">
+					<h3>Оттенки чёрного:</h3>
+					<div class="inner_cont">
+						<input type="radio" name="answerFour" id="lightgray"><label for="lightgray" class="lightgray" title="LightGray"></label>
+						<input type="radio" name="answerFour" id="silver"><label for="silver" class="silver" title="Silver"></label>
+						<input type="radio" name="answerFour" id="darkGray"><label for="darkGray" class="darkGray" title="DarkGray"></label>
+						<input type="radio" name="answerFour" id="gray"><label for="gray" class="gray" title="Gray"></label>
+						<input type="radio" name="answerFour" id="dimGray"><label for="dimGray" class="dimGray" title="DimGray"></label>
+						<input type="radio" name="answerFour" id="lightSlateGray"><label for="lightSlateGray" class="lightSlateGray" title="LightSlateGray"></label>
+						<input type="radio" name="answerFour" id="slateGray"><label for="slateGray" class="slateGray" title="SlateGray"></label>
+						<input type="radio" name="answerFour" id="darkSlateGray"><label for="darkSlateGray" class="darkSlateGray" title="DarkSlateGray"></label>
+					</div>
+				</div>
+				<div class="shades">
+					<h3>Оттенки белого:</h3>
+					<div class="inner_cont">
+						<input type="radio" name="answerFour" id="snow"><label for="snow" class="snow" title="Snow"></label>
+						<input type="radio" name="answerFour" id="mintCream"><label for="mintCream" class="mintCream" title="MintCream"></label>
+						<input type="radio" name="answerFour" id="azure"><label for="azure" class="azure" title="Azure"></label>
+						<input type="radio" name="answerFour" id="aliceBlue"><label for="aliceBlue" class="aliceBlue" title="AliceBlue"></label>
+						<input type="radio" name="answerFour" id="ghostWhite"><label for="ghostWhite" class="ghostWhite" title="GhostWhite"></label>
+						<input type="radio" name="answerFour" id="whiteSmoke"><label for="whiteSmoke" class="whiteSmoke" title="WhiteSmoke"></label>
+						<input type="radio" name="answerFour" id="oldLace"><label for="oldLace" class="oldLace" title="OldLace"></label>
+						<input type="radio" name="answerFour" id="mistyRose"><label for="mistyRose" class="mistyRose" title="MistyRose"></label>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="main_cont hid">
+		<h3>Выберите способ смешивания:</h3>
+		<select>
+			<option></option>
+			<option>Normal</option>
+			<option>Multiply</option>
+			<option>Screen</option>
+			<option>Overlay</option>
+			<option>Darken</option>
+			<option>Lighten</option>
+			<option>Color-Dodge</option>
+			<option>Color-Burn</option>
+			<option>Hard-Light</option>
+			<option>Soft-Light</option>
+			<option>Difference</option>
+			<option>Exclusion</option>
+			<option>Hue</option>
+			<option>Saturation</option>
+			<option>Color</option>
+			<option>Luminosity</option>
+		</select>
+	</div>
+	<div class="main_cont hid">
+			<h3>Результат:</h3>
+		<div class="mix"></div>
+	</div>
+	<script src="JS/script.js"></script>
+</body>
+</html>

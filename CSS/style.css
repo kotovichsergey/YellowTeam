@@ -1,0 +1,189 @@
+body {
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase
+}
+h2 {
+    text-align: center;
+}
+.main_cont {
+    margin: 20px auto;
+    border: solid 2px black;
+    border-radius: 10px;
+    width: 550px;
+    padding: 10px 20px
+}
+.main_cont label {
+    display: block;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid;
+    margin: 10px auto;
+    border-radius: 3px
+}
+input {
+    visibility: hidden;
+    position: absolute;
+}
+.without_img,
+.with_img {
+    margin: 0 auto;
+    width: 400px;
+    display: none;
+}
+.inner_cont {
+    display: flex;
+    justify-content: space-around   
+}
+.inner_cont label {
+    background-color: gainsboro;
+    padding: 15px 20px;
+    margin: 20px
+}
+.color.red {
+    background-color:  red;
+}
+.color.orange {
+    background-color: orange;
+}
+.color.yellow {
+    background-color: yellow;
+}
+.color.green {
+    background-color: green;
+}
+.color.blue {
+    background-color: blue;
+}
+.color.indigo {
+    background-color: indigo;
+}
+.color.violet {
+    background-color: violet;
+}
+.main_cont > label {
+    width: 300px;
+}
+.inner_cont .color {
+    padding: 25px;
+    margin: 15px
+}
+
+.shade_selected > div{ display: none; } 
+.shade_selected label { 
+    padding: 30px 15px; 
+    background: #fff; 
+    width: 30px;
+    display: inline-block;
+    margin: 10px 50px 10px 120px;
+    
+} 
+.shade_selected > label:nth-of-type(1) {
+    background-color: black
+}
+.shade_selected > input:nth-of-type(1):checked ~ div:nth-of-type(1), 
+.shade_selected > input:nth-of-type(2):checked ~ div:nth-of-type(2){ 
+    display: block; 
+    padding: 5px
+}
+.shades label {
+    padding: 20px 15px;
+    margin: 10px
+}
+
+.shades .snow {
+    background-color: snow;
+}
+.shades .mintCream {
+    background-color: mintcream;
+}
+.shades .azure {
+    background-color: azure;
+}
+.shades .aliceBlue {
+    background-color: aliceblue;
+}
+.shades .ghostWhite{
+    background-color: ghostwhite;
+}
+.shades .whiteSmoke {
+    background-color: whitesmoke;
+}
+.shades .oldLace {
+    background-color: oldlace;
+}
+.shades .mistyRose {
+    background-color: mistyrose
+}
+.shades .lightgray {
+    background-color: lightgray;
+}
+.shades .silver {
+    background-color: silver;
+}
+.shades .darkGray {
+    background-color: darkgrey;
+}
+.shades .gray {
+    background-color: gray;
+}
+.shades .dimGray {
+    background-color: dimgray;
+}
+.shades .lightSlateGray {
+    background-color: lightslategray;
+}
+.shades .slateGray {
+    background-color: slategray;
+}
+.shades .darkSlateGray {
+    background-color: darkslategray;
+}
+
+input:checked + label {
+    border-color: red
+}
+select { 
+  font-size: 110%;
+  width: 100%;
+}
+.mix {
+        width: 400px; 
+        height: 300px;
+        background-repeat: no-repeat;
+        margin: 20px auto
+} 
+.mixOfSet {
+    width: 200px;
+    margin: 0 auto
+}
+
+.mixOfSet label {
+    width: 55px;
+    height: 50px;
+}
+.mixOfSet label:first-child {
+    background: url(../img/cat.jpg) no-repeat;
+    background-size: cover;
+}
+.mixOfSet label:nth-of-type(2) {
+    background: blue;
+}
+.mixOfSet label:nth-of-type(3) {
+    background: DarkSlateGrey;
+}
+.mixOfSet label:last-child {
+    background: MistyRose;
+}
+.hid {
+    display: none
+}
+.vis {
+    display: block
+}
